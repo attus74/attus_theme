@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Attus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "App Bar"
+msgstr "App-Kopfbar"
+
+msgid "Menu Bar"
+msgstr "Menü-Kopfbar"
+
+msgid "Content Header"
+msgstr "Inhalts-Kopfbereich"
+
+msgid "Content"
+msgstr "Inhalts-Hauptbereich"
+
+msgid "Content Footer"
+msgstr "Inhalts-Fußbereich"
+
+msgid "Footer"
+msgstr "Fußbereich"
+
+msgid "Navigation Sidebar"
+msgstr "Navigation-Seitenbar"
+
+msgid "Color"
+msgstr "Farbe"
+
+msgid "Primary color"
+msgstr "Erstfarbe"
+
+msgid "Secondary color"
+msgstr "Zweitfarbe"
+
+msgid "Blue"
+msgstr "Blaue"
+
+msgid "Yellow"
+msgstr "Gelb"
+
+msgid "Green"
+msgstr "Grüne"
+
+msgid "Red"
+msgstr "Rot"

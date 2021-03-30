@@ -1,0 +1,139 @@
+/* roboto-regular - latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-v20-latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v20-latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/material-icons.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+$attus-default-font: Roboto;
+
+$attus-typography: (
+  ('h1', 300, 96),
+  ('h2', 300, 60),
+  ('h3', 400, 48),
+  ('h4', 400, 34),
+  ('h5', 400, 24),
+  ('h6', 500, 20),
+  ('subtitle-1', 400, 16),
+  ('subtitle-2', 500, 14),
+  ('body-1', 400, 16),
+  ('body-2', 400, 14),
+  ('button', 500, 14),
+  ('caption', 400, 12),
+  ('overline', 400, 10)
+);
+
+
+@mixin attus-font($default: $attus-default-font, $wide: $attus-default-font) {
+  html {
+    @include attus-layout-mobile {
+      font-size: 13px;
+    }
+    @include attus-layout-tablet {
+      font-size: 14px;
+    }
+    @include attus-layout-desktop {
+      font-size: 16px;
+    }
+    @include attus-layout-wide {
+      font-size: 18px;
+    }
+    body {
+      font-family: $default;
+      @include attus-layout-wide {
+        font-family: $wide;
+      }
+      @each $typo in $attus-typography {
+        .attus-typography-#{nth($typo, 1)} {
+          font-weight: #{nth($typo, 2)};
+          font-size: #{nth($typo, 3) / 16}rem;
+        }
+      }
+      a {
+        &:link, &:visited, &:hover, &:active {
+          text-decoration: none;
+        }
+      }
+      div {
+        &#page-container {
+          main {
+            &#page-content {
+              h1 {
+                &.page-title {
+                  line-height: 44px;
+                }
+              }
+              div {
+                &.field--type-text-long {
+                  p {
+                    line-height: 20px;
+                  }
+                  h2 {
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                  }
+                  h3 {
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                  }
+                }
+                &.block {
+                  p {
+                    line-height: 20px;
+                  }
+                  h2 {
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                  }
+                  h3 {
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include attus-font;
+
+body {
+  #block-attus-branding {
+    div {
+      &.site-name {
+        font-weight: 500;
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

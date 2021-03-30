@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Attus\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "App Bar"
+msgstr "App-Fejléc"
+
+msgid "Menu Bar"
+msgstr "Menü-Fejléc"
+
+msgid "Content Header"
+msgstr "Tartalom-fejléc"
+
+msgid "Content"
+msgstr "Tartalom"
+
+msgid "Content Footer"
+msgstr "Tartalom-lábléc"
+
+msgid "Footer"
+msgstr "Lábléc"
+
+msgid "Navigation Sidebar"
+msgstr "Navigációs sáv"
+
+msgid "Color"
+msgstr "Szín"
+
+msgid "Primary color"
+msgstr "Elsődleges szín"
+
+msgid "Secondary color"
+msgstr "Másodlagos szín"
+
+msgid "Blue"
+msgstr "Kék"
+
+msgid "Yellow"
+msgstr "Sárga"
+
+msgid "Green"
+msgstr "Zöld"
+
+msgid "Red"
+msgstr "Piros"

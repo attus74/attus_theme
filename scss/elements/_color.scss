@@ -1,0 +1,206 @@
+$attus-background: (
+  background: #ffffff,
+  contrast: #000000,
+);
+$attus-surface: (
+  background: #ffffff,
+  contrast: #000000,
+);
+$attus-error: (
+  background: #b00020,
+  contrast: #ffffff,
+);
+
+$attus-default-primary: (
+  background: #2196f3,
+  foreground: #0d47a1,
+  accent: #448aff,
+  contrast: #000000,
+);
+$attus-default-secondary: (
+  background: #ffeb3b,
+  foreground: #f57f17,
+  accent: #ffff8d,
+  contrast: #000000,
+);
+
+$attus-blue: $attus-default-primary;
+$attus-yellow: $attus-default-secondary;
+$attus-red: (
+  background: #d32f2f,
+  foreground: #b71c1c,
+  accent: #ff8a80,
+  contrast: #ffffff,
+);
+$attus-green: (
+  background: #66bb6a,
+  foreground: #1b5e20,
+  accent: #69f0ae,
+  contrast: #000000,
+);
+
+@mixin attus-color($primary, $secondary, $background: $attus-background, $surface: $attus-surface, $error: $attus-error) {
+  div {
+    &#page-container {
+      nav {
+        &.tabs {
+          ul {
+            &.tabs {
+              &.primary {
+                li {
+                  opacity: .72;
+                  &.is-active {
+                    opacity: 1;
+                    a {
+                      &.is-active {
+                        background-color: initial;
+                        border-bottom-color: map-get($primary, 'contrast');
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      main {
+        &#page-content {
+          div {
+            &.field--type-text-long {
+              h2 {
+                color: map-get($secondary, 'foreground');
+              }
+            }
+            &.block {
+              h2 {
+                color: map-get($secondary, 'foreground');
+              }
+            }
+            &.attus-chip {
+              background-color: map_get($secondary, 'background');
+              color: map-get($secondary, 'contrast');
+              a {
+                &:link, &:visited, &:hover, &:active {
+                  color: map-get($secondary, 'contrast');
+                }
+              }
+            }
+          }
+        }
+      }
+      a {
+        &:link, &:visited, &:hover, &:active {
+          color: map-get($primary, 'foreground');
+        }
+      }
+      .attus-primary-background {
+        background-color: map-get($primary, 'background');
+        color: map-get($primary, 'contrast');
+        a {
+          &:link, &:visited, &:hover, &:active {
+            color: map-get($primary, 'contrast');
+          }
+        }
+      }
+      .attus-secondary-background {
+        background-color: map-get($secondary, 'background');
+        color: map-get($secondary, 'contrast');
+        a {
+          &:link, &:visited, &:hover, &:active {
+            color: map-get($secondary, 'contrast');
+          }
+        }
+      }
+      .attus-navigation-drawer {
+        background-color: map-get($surface, 'background');
+        color: map-get($surface, 'contrast');
+        a {
+          &:link, &:visited, &:hover, &:active {
+            color: map-get($surface, 'contrast');
+          }
+        }
+      }
+      .attus-card {
+        background-color: map-get($surface, 'background');
+        color: map-get($surface, 'contrast');
+      }
+    }
+  }
+}
+
+body {
+  @include attus-color($attus-default-primary, $attus-default-secondary);
+  &.attus-color-primary-red {
+    &.attus-color-secondary-blue {
+      @include attus-color($attus-red, $attus-blue);
+    }
+    &.attus-color-secondary-yellow {
+      @include attus-color($attus-red, $attus-yellow);
+    }
+    &.attus-color-secondary-green {
+      @include attus-color($attus-red, $attus-green);
+    }
+    &.attus-color-secondary-red {
+      @include attus-color($attus-red, $attus-red);
+    }
+  }
+  &.attus-color-primary-blue {
+    &.attus-color-secondary-blue {
+      @include attus-color($attus-blue, $attus-blue);
+    }
+    &.attus-color-secondary-yellow {
+      @include attus-color($attus-blue, $attus-yellow);
+    }
+    &.attus-color-secondary-green {
+      @include attus-color($attus-blue, $attus-green);
+    }
+    &.attus-color-secondary-red {
+      @include attus-color($attus-blue, $attus-red);
+    }
+  }
+  &.attus-color-primary-yellow {
+    &.attus-color-secondary-blue {
+      @include attus-color($attus-yellow, $attus-blue);
+    }
+    &.attus-color-secondary-yellow {
+      @include attus-color($attus-yellow, $attus-yellow);
+    }
+    &.attus-color-secondary-green {
+      @include attus-color($attus-yellow, $attus-green);
+    }
+    &.attus-color-secondary-red {
+      @include attus-color($attus-yellow, $attus-red);
+    }
+  }
+  &.attus-color-primary-green {
+    &.attus-color-secondary-blue {
+      @include attus-color($attus-green, $attus-blue);
+    }
+    &.attus-color-secondary-yellow {
+      @include attus-color($attus-green, $attus-yellow);
+    }
+    &.attus-color-secondary-green {
+      @include attus-color($attus-green, $attus-green);
+    }
+    &.attus-color-secondary-red {
+      @include attus-color($attus-green, $attus-red);
+    }
+  }
+}
+
+html {
+  body {
+    div {
+      &#page-container {
+        .attus-navigation-drawer {
+          ul {
+            &.menu {
+              border-bottom: 1px solid #00000020;
+            }
+          }
+        }
+      }
+    }
+  }
+}

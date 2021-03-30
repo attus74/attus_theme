@@ -1,0 +1,12 @@
+## Libraries
+---
+
+page:
+  css:
+    theme:
+      css/attus.css: {}
+  js:
+    js/attus.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

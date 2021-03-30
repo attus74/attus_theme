@@ -1,0 +1,15 @@
+## Breakpoints
+---
+
+attus.mobile:
+  label: Mobile
+  mediaQuery: '(max-width: 599px)'
+  weight: 0
+attus.tablet:
+  label: Tablet
+  mediaQuery: '(min-width: 600px) and (max-width: 839px)'
+  weight: 1
+attus.desktop:
+  label: Desktop
+  mediaQuery: '(min-width: 840px)'
+  weight: 2

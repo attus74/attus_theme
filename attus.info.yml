@@ -1,0 +1,20 @@
+## Attus
+---
+
+name: Attus
+description: Attus Base Theme
+type: theme
+core_version_requirement: ^8 || ^9
+base theme: classy
+regions:
+  app_bar: App Bar
+  menu_bar: Menu Bar
+  content_header: Content Header
+  content: Content
+  content_footer: Content Footer
+  footer: Footer
+  navbar: Navigation Sidebar
+libraries:
+  - attus/page
+primary-color: blue
+secondary-color: yellow

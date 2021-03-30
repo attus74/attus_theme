@@ -1,0 +1,650 @@
+@mixin attus-layout-header-gutter($gutter) {
+  @if $gutter <= 20 {
+    @media (max-width: 719px) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: 720px) {
+      @content;
+    }
+  }
+}
+
+@mixin attus-layout-mobile {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin attus-layout-tablet {
+  @media (min-width: 600px) and (max-width: 839px) {
+    @content;
+  }
+}
+@mixin attus-layout-desktop {
+  @media (min-width: 840px) {
+    @content;
+  }
+}
+@mixin attus-layout-wide {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin attus-layout-container {
+  @include attus-layout-header-gutter(16) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @include attus-layout-header-gutter(24) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  @include attus-layout-wide {
+    width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin attus-layout-app-header {
+  div {
+    &#page-container {
+      header {
+        &#page-header {
+          section {
+            &#app-bar {
+              @content;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin attus-layout-menu-header {
+  div {
+    &#page-container {
+      header {
+        &#page-header {
+          section {
+            &#menu-bar {
+              @content;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin attus-layout-app-content {
+  div {
+    &#page-container {
+      main {
+        &#page-content {
+          @content;
+        }
+      }
+    }
+  }
+}
+
+@mixin attus-card {
+  @content;
+}
+
+@include attus-layout-mobile {
+  html {
+    body {
+      @include attus-layout-app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        div {
+          &.region {
+            @include attus-layout-container;
+          }
+        }
+      }
+      @include attus-layout-menu-header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: -3.5rem;
+        height: 3.5rem;
+        transition: bottom 200ms;
+        &.attus-mobile-fixed {
+          bottom: 0;
+          transition: bottom 250ms;
+        }
+        nav {
+          display: none;
+        }
+        div {
+          &#footer-buttons-right {
+            position: absolute;
+            right: 1rem;
+            bottom: calc(1.75rem - 12px);
+            text-align: right;
+            height: 24px;
+            div {
+              &.mobile-footer-button {
+                display: inline-block;
+                margin: 0 0 0 1.5rem;
+                height: 24px;
+                line-height: 24px;
+                padding: 0;
+                cursor: pointer;
+                &.mobile-footer-expand {
+                  display: none;
+                }
+              }
+            }
+          }
+          &.block-search {
+            display: none;
+            &.open {
+              display: block;
+              h2 {
+                display: none;
+              }
+            }
+          }
+          &.region {
+            &.attus-navigation-drawer {
+              @include attus-shadow(16);
+              nav {
+                display: block;
+              }
+              position: fixed;
+              left: 0;
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+      &.toolbar-vertical {
+        @include attus-layout-app-header {
+          position: absolute;
+          top: 39px;
+          &.attus-mobile-fixed {
+            position: fixed;
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@include attus-layout-tablet {
+  html {
+    body {
+      @include attus-layout-app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        div {
+          &.region {
+            @include attus-layout-container;
+          }
+        }
+      }
+      @include attus-layout-menu-header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        nav {
+          display: none;
+        }
+        ul {
+          &.menu {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+            display: inline-block;
+            @include attus-layout-header-gutter(16) {
+              padding-right: 1rem;
+            }
+            @include attus-layout-header-gutter(24) {
+              padding-right: 1.5rem;
+            }
+            li {
+              &.menu-item {
+                display: inline-block;
+                margin: 0;
+                padding-top: calc(1.75rem - 12px);
+                padding-bottom: calc(1.75rem - 12px);
+                padding-left: 0;
+                @include attus-layout-header-gutter(16) {
+                  padding-right: 1rem;
+                }
+                @include attus-layout-header-gutter(24) {
+                  padding-right: 1.5rem;
+                }
+                border: 0;
+              }
+            }
+          }
+        }
+        div {
+          &#footer-buttons-right {
+            position: absolute;
+            right: 0;
+            top: calc(1.75rem - 12px);
+            text-align: right;
+            height: 24px;
+            @include attus-layout-header-gutter(16) {
+              padding-right: 1rem;
+            }
+            @include attus-layout-header-gutter(24) {
+              padding-right: 1.5rem;
+            }
+            div {
+              &.mobile-footer-button {
+                display: inline-block;
+                margin: 0 0 0 1.5rem;
+                height: 24px;
+                line-height: 24px;
+                padding: 0;
+                cursor: pointer;
+                &.mobile-footer-search, &.mobile-footer-menu {
+                  display: none;
+                }
+              }
+            }
+          }
+          &.block-search {
+            display: none;
+          }
+        }
+        &.attus-mobile-fixed {
+          top: 3.5rem;
+          height: 3.5rem;
+          nav {
+            display: inline-block;
+          }
+          div {
+            &#footer-buttons-right {
+              display: none;
+            }
+            &.region {
+              @include attus-layout-container;
+            }
+            &.block-search {
+              display: inline-block;
+              text-align: right;
+              h2 {
+                display: none;
+              }
+            }
+          }
+        }
+        &.attus-menu-open {
+          top: 3.5rem;
+          height: 3.5rem;
+          nav {
+            display: inline-block;
+          }
+          div {
+            &.region {
+              @include attus-layout-container;
+            }
+            &.block-search {
+              display: inline-block;
+              text-align: right;
+              h2 {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+      &.toolbar-vertical {
+        &.toolbar-fixed {
+          @include attus-layout-app-header {
+            position: fixed;
+            top: 39px;
+            &.attus-mobile-fixed {
+              position: fixed;
+              top: 39px;
+            }
+          }
+          @include attus-layout-menu-header {
+            top: 39px;
+            &.attus-mobile-fixed, &.attus-menu-open {
+              top: calc(3.5rem + 39px);
+            }
+          }
+        }
+        &.toolbar-tray-open {
+           @include attus-layout-app-header {
+             padding-left: 16rem;
+           }
+           @include attus-layout-menu-header {
+             padding-left: 16rem;
+           }
+        }
+      }
+    }
+  }
+}
+@include attus-layout-desktop {
+  html {
+    body {
+      @include attus-layout-app-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        div {
+          &.region {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+          }
+        }
+      }
+      &.toolbar-vertical {
+        &.toolbar-fixed {
+          @include attus-layout-app-header {
+            top: 39px;
+          }
+          @include attus-layout-menu-header {
+            top: 39px;
+            &.attus-mobile-fixed {
+              top: calc(39px + 3.5rem);
+            }
+          }
+        }
+        &.toolbar-tray-open {
+           @include attus-layout-app-header {
+             padding-left: 16rem;
+           }
+        }
+      }
+      &.toolbar-horizontal {
+        @include attus-layout-app-header {
+          top: 79px;
+        }
+        @include attus-layout-menu-header {
+          top: 79px;
+          &.attus-mobile-fixed {
+            top: calc(79px + 3.5rem);
+          }
+        }
+      }
+    }
+    @include attus-layout-menu-header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      transition: top 200ms;
+      @include attus-layout-header-gutter(16) {
+        padding-right: 1rem;
+      }
+      @include attus-layout-header-gutter(24) {
+        padding-right: 1.5rem;
+      }
+      nav {
+        display: inline-block;
+      }
+      ul {
+        &.menu {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          list-style: none;
+          display: inline-block;
+          @include attus-layout-header-gutter(16) {
+            padding-right: 1rem;
+          }
+          @include attus-layout-header-gutter(24) {
+            padding-right: 1.5rem;
+          }
+          li {
+            &.menu-item {
+              display: inline-block;
+              margin: 0;
+              line-height: 24px;
+              padding-top: calc(1.75rem - 12px);
+              padding-bottom: calc(1.75rem - 12px);
+              padding-left: 0;
+              @include attus-layout-header-gutter(16) {
+                padding-right: 1rem;
+              }
+              @include attus-layout-header-gutter(24) {
+                padding-right: 1.5rem;
+              }
+              border: 0;
+            }
+          }
+        }
+      }
+      div {
+        &#footer-buttons-right {
+          display: none;
+        }
+        &.block-search {
+          display: inline-block;
+          text-align: right;
+          h2 {
+            display: none;
+          }
+        }
+      }
+      &.attus-mobile-fixed {
+        left: 0;
+        top: 3.5rem;
+        transition: top 250ms;
+        @include attus-layout-header-gutter(16) {
+          padding-left: 1rem;
+        }
+        @include attus-layout-header-gutter(24) {
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+html {
+  body {
+    div {
+      &#page-container {
+        header {
+          &#page-header {
+            section {
+              &#app-bar {
+                div {
+                  &.region {
+                    padding-bottom: 1rem;
+                    padding-top: 1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+        main {
+          &#page-content {
+            @include attus-layout-mobile {
+              padding-top: 3.5rem;
+            }
+            @include attus-layout-tablet {
+              padding-top: 7rem;
+            }
+            @include attus-layout-desktop {
+              padding-top: 7rem;
+            }
+            nav {
+              &.tabs {
+                ul {
+                  &.tabs {
+                    &.primary {
+                      li {
+                        a {
+                          line-height: 1rem;
+                          display: block;
+                          padding: 1rem;
+                          min-width: 3.5rem;
+                          &.is-active {
+                            padding-bottom: calc(1rem - 2px);
+                            border-bottom: 2px solid;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              &.breadcrumb {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                ol {
+                  @include attus-layout-container;
+                }
+              }
+            }
+          }
+          section {
+            &#content {
+              h1 {
+                &.page-title {
+                  @include attus-layout-container;
+                }
+              }
+              article {
+                &.node {
+                  &.node--view-mode-full {
+                    .node__meta {
+                      @include attus-layout-container;
+                      padding-bottom: 0.5rem;
+                    }
+                    .node__content {
+                      & > .field {
+                        @include attus-layout-container;
+                        img {
+                          max-width: 100%;
+                          margin: 0;
+                          padding: 0;
+                          height: auto;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              div {
+                &.attus-chip {
+                  display: inline-block;
+                  line-height: 1rem;
+                  height: 1rem;
+                  padding: 0.5rem 0.75rem;
+                  margin-right: 1rem;
+                  margin-bottom: 1rem;
+                  border-radius: 1rem;
+                  &:last-child {
+                    margin-right: 0;
+                  }
+                }
+                &.view {
+                  div {
+                    &.view-content {
+                      @include attus-layout-container;
+                    }
+                  }
+                }
+              }
+            }
+            &#content-footer {
+              div {
+                &.block {
+                  @include attus-layout-container;
+                }
+              }
+            }
+          }
+        }
+        footer {
+          &#page-footer {
+            div {
+              &.region {
+                @include attus-layout-container;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                nav {
+                  ul {
+                    margin: 0;
+                    padding: 0;
+                    li {
+                      padding: 1rem 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .attus-navigation-drawer {
+          ul {
+            &.menu {
+              margin: 0;
+              padding: 0;
+              border: none;
+              li {
+                padding-top: 0.25rem;
+                padding-bottom: 0.25rem;
+                @include attus-layout-header-gutter(16) {
+                  padding-left: 1rem;
+                  padding-right: 1rem;
+                }
+                @include attus-layout-header-gutter(24) {
+                  padding-left: 1.5rem;
+                  padding-right: 1.5rem;
+                }
+                a {
+                  display: block;
+                  padding: 0.8125rem 0;
+                  line-height: 0.875rem;
+                }
+              }
+            }
+          }
+        }
+        .attus-card {
+          .attus-card-header {
+            padding: 1rem 1rem 0.5rem 1rem;
+          }
+          .attus-card-content {
+            img {
+              width: 100%;
+              height: auto;
+            }
+            div {
+              &.field {
+                &.field--type-text-long {
+                  padding: 0.5rem 1rem 1rem 1rem;
+                }
+              }
+            }
+          }
+          .attus-card-actions {
+            padding: 0.5rem 1rem;
+            text-align: right;
+          }
+          @include attus-layout-header-gutter(16) {
+            margin-bottom: 1rem;
+          }
+          @include attus-layout-header-gutter(24) {
+            margin-bottom: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}

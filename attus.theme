@@ -1,0 +1,81 @@
+<?php
+
+/**
+ * Attus Theme
+ *
+ * @author Attila Németh
+ * 16.03.2021
+ */
+
+/**
+ * Implements hook_locale_translation_projects_alter()
+ */
+function attus_locale_translation_projects_alter(&$projects)
+{
+  $projects['attus']['info']['interface translation project'] = 'attus';
+  $projects['attus']['info']['interface translation server pattern'] =
+      drupal_get_path('theme', 'attus') . '/translations/attus.%language.po';
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function attus_preprocess_html(&$variables)
+{
+  $variables['attributes']['class'][] = 'attus-color-primary-' . theme_get_setting('primary-color');
+  $variables['attributes']['class'][] = 'attus-color-secondary-' . theme_get_setting('secondary-color');
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function attus_preprocess_region(&$variables)
+{
+//  if ($variables['region'] == 'app_bar') {
+//    $variables['attributes']['class'][] = 'attus-elevation-4';
+//  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function attus_preprocess_page_title(&$variables)
+{
+  $variables['title_attributes']['class'][] = 'attus-typography-h3';
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function attus_preprocess_field__text_long(&$variables)
+{
+  $variables['attributes']['class'][] = 'attus-typography-body-1';
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function attus_preprocess_field__with_summary(&$variables)
+{
+  $variables['attributes']['class'][] = 'attus-typography-body-1';
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function attus_preprocess_field__field_tags(&$variables)
+{
+  $variables['attributes']['class'][] = 'attus-typography-body-2';
+  foreach(array_keys($variables['items']) as $delta) {
+    $variables['items'][$delta]['attributes']->addClass('attus-chip');
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK()
+ */
+function attus_preprocess_node__teaser(&$variables)
+{
+  $variables['title_attributes']['class'][] = 'attus-card-title';
+  $variables['content_attributes']['class'][] = 'attus-card-content';
+}
