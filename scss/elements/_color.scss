@@ -125,6 +125,32 @@ $attus-green: (
         background-color: map-get($surface, 'background');
         color: map-get($surface, 'contrast');
       }
+      form {
+        .form-item {
+          label {
+            color: #{map-get($surface, 'contrast')}df;
+          }
+          input {
+            color: map-get($surface, 'contrast');
+            background-color: #{map-get($surface, 'contrast')}0f;
+            border-color: #{map-get($surface, 'contrast')}df;
+          }
+          &.attus-input-focus {
+            label {
+              color: map-get($primary, 'foreground');
+            }
+            input {
+              border-color: map-get($primary, foreground);
+            }
+          }
+        }
+      }
+      input {
+        &.button {
+          background-color: map-get($secondary, background);
+          color: map-get($secondary, contrast);
+        }
+      }
     }
   }
 }

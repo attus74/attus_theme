@@ -121,6 +121,31 @@ $attus-typography: (
           }
         }
       }
+      form {
+        .form-item {
+          label {
+            font-weight: 400;
+            font-size: 0.75rem;
+          }
+          .description {
+            font-weight: 400;
+            font-size: 0.75rem;
+          }
+          &.attus-input-empty:not(.attus-input-focus) {
+            label {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      input {
+        &.button {
+          font-weight: 500;
+          font-size: 0.875rem;
+          height: 2.25rem;
+          line-height: 1.25rem;
+        }
+      }
     }
   }
 }

@@ -147,6 +147,8 @@
             display: none;
             &.open {
               display: block;
+              padding-top: 0.5rem;
+              padding-left: 0.5rem;
               h2 {
                 display: none;
               }
@@ -365,6 +367,9 @@
            @include attus-layout-app-header {
              padding-left: 16rem;
            }
+           @include attus-layout-menu-header {
+             padding-left: 16rem;
+           }
         }
       }
       &.toolbar-horizontal {
@@ -467,6 +472,17 @@ html {
                   }
                 }
               }
+              &#menu-bar {
+                div {
+                  &.block-search {
+                    .form-item {
+                      input {
+                        padding-top: 0.5rem;
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -540,6 +556,11 @@ html {
                 }
               }
               div {
+                &.block {
+                  form {
+                    @include attus-layout-container;
+                  }
+                }
                 &.attus-chip {
                   display: inline-block;
                   line-height: 1rem;

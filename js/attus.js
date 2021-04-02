@@ -35,7 +35,7 @@ jQuery(document).ready(() => {
   });
 });
 
-Drupal.behaviors.myBehavior = {
+Drupal.behaviors.attus = {
   attach: function (context, settings) {
     var $mobileMenuWrapper = jQuery('header#page-header section#menu-bar');
     var $mobileFooterMenus = $mobileMenuWrapper.find('nav');
@@ -78,5 +78,35 @@ Drupal.behaviors.myBehavior = {
         }
       });
     }
+    jQuery('form .form-item').each(function() {
+      jQuery(this).attusInput();
+    });
+  }
+};
+
+jQuery.fn.attusInput = function() {
+  if (!jQuery(this).hasClass('attus-initialized')) {
+    jQuery(this).addClass('attus-initialized');
+    var $input;
+    if (jQuery(this).find('input').length  > 0) {
+      $input = jQuery(this).find('input');
+    }
+    if ($input.val() === '') {
+      jQuery(this).addClass('attus-input-empty');
+    }
+    $input.focus(() => {
+      jQuery(this).addClass('attus-input-focus');
+    });
+    $input.blur(() => {
+      jQuery(this).removeClass('attus-input-focus');
+    });
+    $input.keyup(() => {
+      if ($input.val() === '') {
+        jQuery(this).addClass('attus-input-empty');
+      }
+      else {
+        jQuery(this).removeClass('attus-input-empty')
+      }
+    });
   }
 };
