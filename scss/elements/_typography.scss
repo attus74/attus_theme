@@ -82,6 +82,20 @@ $attus-typography: (
       }
       div {
         &#page-container {
+          header {
+            &#page-header {
+              div {
+                &.block {
+                  div {
+                    &.site-name {
+                      font-weight: 500;
+                      font-size: 1.25rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
           main {
             &#page-content {
               h1 {
@@ -151,14 +165,3 @@ $attus-typography: (
 }
 
 @include attus-font;
-
-body {
-  #block-attus-branding {
-    div {
-      &.site-name {
-        font-weight: 500;
-        font-size: 1.25rem;
-      }
-    }
-  }
-}
