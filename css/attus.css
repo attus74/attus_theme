@@ -451,6 +451,32 @@ html body div#page-container main section#content article.node.node--view-mode-f
     width: 1360px;
     margin-left: auto;
     margin-right: auto; } }
+@media (max-width: 719px) {
+  html body div#page-container main section#content div.block > h2 {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+@media (min-width: 720px) {
+  html body div#page-container main section#content div.block > h2 {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; } }
+@media (min-width: 1440px) {
+  html body div#page-container main section#content div.block > h2 {
+    width: 1360px;
+    margin-left: auto;
+    margin-right: auto; } }
+@media (max-width: 719px) {
+  html body div#page-container main section#content div.block > div.item-list {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+@media (min-width: 720px) {
+  html body div#page-container main section#content div.block > div.item-list {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem; } }
+@media (min-width: 1440px) {
+  html body div#page-container main section#content div.block > div.item-list {
+    width: 1360px;
+    margin-left: auto;
+    margin-right: auto; } }
 html body div#page-container main section#content div.attus-chip {
   display: inline-block;
   line-height: 1rem;
@@ -1529,6 +1555,8 @@ form .form-item {
     padding-left: 1rem;
     padding-right: 0.75rem;
     padding-top: 1.25rem; }
+form .container-inline div.form-item {
+  padding: 1.25rem 0 0.5rem 0; }
 
 input.button {
   border: none;

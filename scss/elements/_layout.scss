@@ -560,6 +560,14 @@ html {
                   form {
                     @include attus-layout-container;
                   }
+                  & > h2 {
+                    @include attus-layout-container;
+                  }
+                  & > div {
+                    &.item-list {
+                      @include attus-layout-container;
+                    }
+                  }
                 }
                 &.attus-chip {
                   display: inline-block;
