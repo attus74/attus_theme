@@ -1,0 +1,102 @@
+@mixin attus-layout-header-gutter($gutter) {
+  @if $gutter <= 20 {
+    @media (max-width: 719px) {
+      @content;
+    }
+  }
+  @else {
+    @media (min-width: 720px) {
+      @content;
+    }
+  }
+}
+
+@mixin attus-layout-mobile {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin attus-layout-tablet {
+  @media (min-width: 600px) and (max-width: 839px) {
+    @content;
+  }
+}
+@mixin attus-layout-desktop {
+  @media (min-width: 840px) {
+    @content;
+  }
+}
+@mixin attus-layout-wide {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin attus-layout-container {
+  @include attus-layout-header-gutter(16) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @include attus-layout-header-gutter(24) {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  @include attus-layout-wide {
+    width: 1360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@mixin attus-layout-container-override {
+  margin-left: initial;
+  margin-right: initial;
+  @include attus-layout-wide {
+    width: auto;
+  }
+}
+
+@mixin attus-layout-app-header {
+  div {
+    &#page-container {
+      header {
+        &#page-header {
+          section {
+            &#app-bar {
+              @content;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin attus-layout-menu-header {
+  div {
+    &#page-container {
+      header {
+        &#page-header {
+          section {
+            &#menu-bar {
+              @content;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@mixin attus-layout-app-content {
+  div {
+    &#page-container {
+      main {
+        &#page-content {
+          @content;
+        }
+      }
+    }
+  }
+}
+
+@mixin attus-card {
+  @content;
+}
