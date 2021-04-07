@@ -100,13 +100,13 @@ $attus-typography: (
             &#page-content {
               h1 {
                 &.page-title {
-                  line-height: 44px;
+                  line-height: 2.75rem;
                 }
               }
               div {
                 &.field--type-text-long {
                   p {
-                    line-height: 20px;
+                    line-height: 1.25rem;
                   }
                   h2 {
                     font-weight: 400;
@@ -119,7 +119,7 @@ $attus-typography: (
                 }
                 &.block {
                   p {
-                    line-height: 20px;
+                    line-height: 1.25rem;
                   }
                   h2 {
                     font-weight: 400;

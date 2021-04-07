@@ -90,7 +90,10 @@ $attus-green: (
         }
       }
       a {
-        &:link, &:visited, &:hover, &:active {
+        &:link, &:visited {
+          color: #{map-get($primary, 'foreground')}af;
+        }
+        &:hover, &:active {
           color: map-get($primary, 'foreground');
         }
       }
