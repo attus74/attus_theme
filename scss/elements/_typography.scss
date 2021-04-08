@@ -105,7 +105,7 @@ $attus-typography: (
               }
               div {
                 &.field--type-text-long {
-                  p {
+                  p, ul {
                     line-height: 1.25rem;
                   }
                   h2 {
@@ -118,7 +118,7 @@ $attus-typography: (
                   }
                 }
                 &.block {
-                  p {
+                  p, ul {
                     line-height: 1.25rem;
                   }
                   h2 {

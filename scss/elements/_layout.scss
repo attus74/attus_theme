@@ -474,6 +474,14 @@ html {
                       @include attus-layout-container;
                     }
                   }
+                  ul {
+                    @include attus-layout-header-gutter(16) {
+                      padding-left: 1.25rem;
+                    }
+                    @include attus-layout-header-gutter(24) {
+                      padding-left: 1.75rem;
+                    }
+                  }
                 }
                 &.view {
                   div {

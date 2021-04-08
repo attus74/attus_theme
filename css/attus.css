@@ -478,6 +478,12 @@ html body div#page-container main section#content article.node.node--view-mode-f
     margin-left: auto;
     margin-right: auto; } }
 @media (max-width: 719px) {
+  html body div#page-container main section#content div.block ul {
+    padding-left: 1.25rem; } }
+@media (min-width: 720px) {
+  html body div#page-container main section#content div.block ul {
+    padding-left: 1.75rem; } }
+@media (max-width: 719px) {
   html body div#page-container main section#content div.view div.view-content {
     margin-left: 1rem;
     margin-right: 1rem; } }
@@ -1531,7 +1537,7 @@ html body {
     font-size: 1.25rem; }
   html body div#page-container main#page-content h1.page-title {
     line-height: 2.75rem; }
-  html body div#page-container main#page-content div.field--type-text-long p {
+  html body div#page-container main#page-content div.field--type-text-long p, html body div#page-container main#page-content div.field--type-text-long ul {
     line-height: 1.25rem; }
   html body div#page-container main#page-content div.field--type-text-long h2 {
     font-weight: 400;
@@ -1539,7 +1545,7 @@ html body {
   html body div#page-container main#page-content div.field--type-text-long h3 {
     font-weight: 500;
     font-size: 1.25rem; }
-  html body div#page-container main#page-content div.block p {
+  html body div#page-container main#page-content div.block p, html body div#page-container main#page-content div.block ul {
     line-height: 1.25rem; }
   html body div#page-container main#page-content div.block h2 {
     font-weight: 400;
