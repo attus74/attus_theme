@@ -408,12 +408,14 @@ html {
                 ul {
                   &.tabs {
                     &.primary {
+                      margin-bottom: 0;
                       li {
                         a {
                           line-height: 1rem;
                           display: block;
                           padding: 1rem;
                           min-width: 3.5rem;
+                          text-align: center;
                           &.is-active {
                             padding-bottom: calc(1rem - 2px);
                             border-bottom: 2px solid;

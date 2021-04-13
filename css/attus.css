@@ -368,14 +368,17 @@ html body div#page-container header#page-header section#menu-bar div.block-searc
 @media (min-width: 840px) {
   html body div#page-container main#page-content {
     padding-top: 7rem; } }
-html body div#page-container main#page-content nav.tabs ul.tabs.primary li a {
-  line-height: 1rem;
-  display: block;
-  padding: 1rem;
-  min-width: 3.5rem; }
-  html body div#page-container main#page-content nav.tabs ul.tabs.primary li a.is-active {
-    padding-bottom: calc(1rem - 2px);
-    border-bottom: 2px solid; }
+html body div#page-container main#page-content nav.tabs ul.tabs.primary {
+  margin-bottom: 0; }
+  html body div#page-container main#page-content nav.tabs ul.tabs.primary li a {
+    line-height: 1rem;
+    display: block;
+    padding: 1rem;
+    min-width: 3.5rem;
+    text-align: center; }
+    html body div#page-container main#page-content nav.tabs ul.tabs.primary li a.is-active {
+      padding-bottom: calc(1rem - 2px);
+      border-bottom: 2px solid; }
 html body div#page-container main#page-content nav.breadcrumb {
   padding-top: 1rem;
   padding-bottom: 1rem; }
@@ -578,6 +581,12 @@ html body div#page-container .attus-card .attus-card-actions {
 
 body div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -629,6 +638,12 @@ body div#page-container input.button {
   color: #000000; }
 body.attus-color-primary-red.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-red.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-red.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-red.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-red.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -680,6 +695,12 @@ body.attus-color-primary-red.attus-color-secondary-blue div#page-container input
   color: #000000; }
 body.attus-color-primary-red.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-red.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-red.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-red.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-red.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -731,6 +752,12 @@ body.attus-color-primary-red.attus-color-secondary-yellow div#page-container inp
   color: #000000; }
 body.attus-color-primary-red.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-red.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-red.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-red.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-red.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -782,6 +809,12 @@ body.attus-color-primary-red.attus-color-secondary-green div#page-container inpu
   color: #000000; }
 body.attus-color-primary-red.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-red.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-red.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-red.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-red.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -833,6 +866,12 @@ body.attus-color-primary-red.attus-color-secondary-red div#page-container input.
   color: #ffffff; }
 body.attus-color-primary-blue.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-blue.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-blue.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-blue.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-blue.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -884,6 +923,12 @@ body.attus-color-primary-blue.attus-color-secondary-blue div#page-container inpu
   color: #000000; }
 body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -935,6 +980,12 @@ body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container in
   color: #000000; }
 body.attus-color-primary-blue.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-blue.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-blue.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-blue.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-blue.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -986,6 +1037,12 @@ body.attus-color-primary-blue.attus-color-secondary-green div#page-container inp
   color: #000000; }
 body.attus-color-primary-blue.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-blue.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-blue.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-blue.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-blue.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1037,6 +1094,12 @@ body.attus-color-primary-blue.attus-color-secondary-red div#page-container input
   color: #ffffff; }
 body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1088,6 +1151,12 @@ body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container in
   color: #000000; }
 body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1139,6 +1208,12 @@ body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container 
   color: #000000; }
 body.attus-color-primary-yellow.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-yellow.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-yellow.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-yellow.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-yellow.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1190,6 +1265,12 @@ body.attus-color-primary-yellow.attus-color-secondary-green div#page-container i
   color: #000000; }
 body.attus-color-primary-yellow.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-yellow.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-yellow.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-yellow.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-yellow.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1241,6 +1322,12 @@ body.attus-color-primary-yellow.attus-color-secondary-red div#page-container inp
   color: #ffffff; }
 body.attus-color-primary-green.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-green.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-green.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-green.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-green.attus-color-secondary-blue div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1292,6 +1379,12 @@ body.attus-color-primary-green.attus-color-secondary-blue div#page-container inp
   color: #000000; }
 body.attus-color-primary-green.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-green.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-green.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-green.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-green.attus-color-secondary-yellow div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1343,6 +1436,12 @@ body.attus-color-primary-green.attus-color-secondary-yellow div#page-container i
   color: #000000; }
 body.attus-color-primary-green.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-green.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-green.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-green.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-green.attus-color-secondary-green div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {
@@ -1394,6 +1493,12 @@ body.attus-color-primary-green.attus-color-secondary-green div#page-container in
   color: #000000; }
 body.attus-color-primary-green.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
+  body.attus-color-primary-green.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li:hover {
+    background: none;
+    opacity: 1; }
+  body.attus-color-primary-green.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li a:hover {
+    background: none;
+    opacity: 1; }
   body.attus-color-primary-green.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active {
     opacity: 1; }
     body.attus-color-primary-green.attus-color-secondary-red div#page-container nav.tabs ul.tabs.primary li.is-active a.is-active {

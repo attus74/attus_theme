@@ -49,6 +49,16 @@ $attus-green: (
               &.primary {
                 li {
                   opacity: .72;
+                  &:hover {
+                    background: none;
+                    opacity: 1;
+                  }
+                  a {
+                    &:hover {
+                      background: none;
+                      opacity: 1;
+                    }
+                  }
                   &.is-active {
                     opacity: 1;
                     a {
