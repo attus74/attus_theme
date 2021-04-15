@@ -610,6 +610,8 @@ body div#page-container .attus-primary-background {
   color: #000000; }
   body div#page-container .attus-primary-background a:link, body div#page-container .attus-primary-background a:visited, body div#page-container .attus-primary-background a:hover, body div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body div#page-container .attus-primary-background ul.contextual-links li a:link, body div#page-container .attus-primary-background ul.contextual-links li a:visited, body div#page-container .attus-primary-background ul.contextual-links li a:hover, body div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body div#page-container .attus-secondary-background {
   background-color: #ffeb3b;
   color: #000000; }
@@ -667,6 +669,8 @@ body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attu
   color: #ffffff; }
   body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background a:link, body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background a:visited, body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background a:hover, body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background a:active {
     color: #ffffff; }
+  body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-red.attus-color-secondary-blue div#page-container .attus-secondary-background {
   background-color: #2196f3;
   color: #000000; }
@@ -724,6 +728,8 @@ body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .at
   color: #ffffff; }
   body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background a:link, body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background a:visited, body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background a:hover, body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background a:active {
     color: #ffffff; }
+  body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-red.attus-color-secondary-yellow div#page-container .attus-secondary-background {
   background-color: #ffeb3b;
   color: #000000; }
@@ -781,6 +787,8 @@ body.attus-color-primary-red.attus-color-secondary-green div#page-container .att
   color: #ffffff; }
   body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background a:link, body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background a:visited, body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background a:hover, body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background a:active {
     color: #ffffff; }
+  body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-red.attus-color-secondary-green div#page-container .attus-secondary-background {
   background-color: #66bb6a;
   color: #000000; }
@@ -838,6 +846,8 @@ body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus
   color: #ffffff; }
   body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background a:link, body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background a:visited, body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background a:hover, body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background a:active {
     color: #ffffff; }
+  body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-red.attus-color-secondary-red div#page-container .attus-secondary-background {
   background-color: #d32f2f;
   color: #ffffff; }
@@ -895,6 +905,8 @@ body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .att
   color: #000000; }
   body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background a:link, body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background a:visited, body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background a:hover, body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-blue.attus-color-secondary-blue div#page-container .attus-secondary-background {
   background-color: #2196f3;
   color: #000000; }
@@ -952,6 +964,8 @@ body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .a
   color: #000000; }
   body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background a:link, body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background a:visited, body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background a:hover, body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-blue.attus-color-secondary-yellow div#page-container .attus-secondary-background {
   background-color: #ffeb3b;
   color: #000000; }
@@ -1009,6 +1023,8 @@ body.attus-color-primary-blue.attus-color-secondary-green div#page-container .at
   color: #000000; }
   body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background a:link, body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background a:visited, body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background a:hover, body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-blue.attus-color-secondary-green div#page-container .attus-secondary-background {
   background-color: #66bb6a;
   color: #000000; }
@@ -1066,6 +1082,8 @@ body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attu
   color: #000000; }
   body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background a:link, body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background a:visited, body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background a:hover, body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-blue.attus-color-secondary-red div#page-container .attus-secondary-background {
   background-color: #d32f2f;
   color: #ffffff; }
@@ -1123,6 +1141,8 @@ body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .a
   color: #000000; }
   body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background a:link, body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background a:visited, body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background a:hover, body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-yellow.attus-color-secondary-blue div#page-container .attus-secondary-background {
   background-color: #2196f3;
   color: #000000; }
@@ -1180,6 +1200,8 @@ body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container 
   color: #000000; }
   body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background a:link, body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background a:visited, body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background a:hover, body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-yellow.attus-color-secondary-yellow div#page-container .attus-secondary-background {
   background-color: #ffeb3b;
   color: #000000; }
@@ -1237,6 +1259,8 @@ body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .
   color: #000000; }
   body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background a:link, body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background a:visited, body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background a:hover, body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-yellow.attus-color-secondary-green div#page-container .attus-secondary-background {
   background-color: #66bb6a;
   color: #000000; }
@@ -1294,6 +1318,8 @@ body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .at
   color: #000000; }
   body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background a:link, body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background a:visited, body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background a:hover, body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-yellow.attus-color-secondary-red div#page-container .attus-secondary-background {
   background-color: #d32f2f;
   color: #ffffff; }
@@ -1351,6 +1377,8 @@ body.attus-color-primary-green.attus-color-secondary-blue div#page-container .at
   color: #000000; }
   body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background a:link, body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background a:visited, body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background a:hover, body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-green.attus-color-secondary-blue div#page-container .attus-secondary-background {
   background-color: #2196f3;
   color: #000000; }
@@ -1408,6 +1436,8 @@ body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .
   color: #000000; }
   body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background a:link, body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background a:visited, body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background a:hover, body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-green.attus-color-secondary-yellow div#page-container .attus-secondary-background {
   background-color: #ffeb3b;
   color: #000000; }
@@ -1465,6 +1495,8 @@ body.attus-color-primary-green.attus-color-secondary-green div#page-container .a
   color: #000000; }
   body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background a:link, body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background a:visited, body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background a:hover, body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-green.attus-color-secondary-green div#page-container .attus-secondary-background {
   background-color: #66bb6a;
   color: #000000; }
@@ -1522,6 +1554,8 @@ body.attus-color-primary-green.attus-color-secondary-red div#page-container .att
   color: #000000; }
   body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background a:link, body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background a:visited, body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background a:hover, body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background a:active {
     color: #000000; }
+  body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:link, body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:visited, body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:hover, body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-primary-background ul.contextual-links li a:active {
+    color: #333333; }
 body.attus-color-primary-green.attus-color-secondary-red div#page-container .attus-secondary-background {
   background-color: #d32f2f;
   color: #ffffff; }
