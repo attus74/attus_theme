@@ -60,6 +60,13 @@
               }
             }
           }
+          &.block-node-syndicate-block {
+            position: absolute;
+            left: 1rem;
+            bottom: calc(1.75rem - 8px);
+            height: 16px;
+            width: 16px;
+          }
           &.region {
             &.attus-navigation-drawer {
               @include attus-shadow(16);
@@ -170,6 +177,9 @@
           &.block-search {
             display: none;
           }
+          &.block-node-syndicate-block {
+            display: none;
+          }
         }
         &.attus-mobile-fixed {
           top: 3.5rem;
@@ -191,6 +201,15 @@
                 display: none;
               }
             }
+            &.block-node-syndicate-block {
+              display: inline-block;
+              padding-left: 1.5rem;
+              width: 16px;
+              height: 16px;
+              a {
+                text-indent: 16px;
+              }
+            }
           }
         }
         &.attus-menu-open {
@@ -208,6 +227,15 @@
               text-align: right;
               h2 {
                 display: none;
+              }
+            }
+            &.block-node-syndicate-block {
+              display: inline-block;
+              padding-left: 1.5rem;
+              width: 16px;
+              height: 16px;
+              a {
+                text-indent: 16px;
               }
             }
           }
@@ -345,6 +373,15 @@
           text-align: right;
           h2 {
             display: none;
+          }
+        }
+        &.block-node-syndicate-block {
+          display: inline-block;
+          padding-left: 1.5rem;
+          width: 16px;
+          height: 16px;
+          a {
+            text-indent: 16px;
           }
         }
       }
