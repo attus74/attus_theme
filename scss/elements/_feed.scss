@@ -1,0 +1,123 @@
+div {
+  &.feed-list-wrapper {
+    @include attus-layout-header-gutter(16) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+    }
+    @include attus-layout-header-gutter(24) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    div {
+      &.feed-item {
+        @include attus-layout-header-gutter(16) {
+          margin-top: 1rem;
+        }
+        @include attus-layout-header-gutter(24) {
+          margin-top: 1.5rem;
+        }
+        @include attus-layout-wide {
+          width: 1360px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        &.feed-is-marking {
+          background-color: #a7ffeb;
+        }
+        div {
+          &.feed-item-header {
+            padding: 0.5rem 1rem;
+            p {
+              &.feed-item-avatar {
+                float: left;
+                margin-top: 0;
+                margin-bottom: 0;
+                width: 56px;
+                  margin-right: 16px;
+                  img {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 28px;
+                  }
+                @include attus-layout-mobile {
+                  width: 40px;
+                  margin-right: 8px;
+                  img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 20px;
+                  }
+                }
+              }
+              &.feed-item-title {
+                margin: 0;
+                padding: 0;
+              }
+              &.feed-item-feed {
+                margin: 0;
+                padding: 0;
+                opacity: 0.72;
+              }
+            }
+          }
+          &.feed-item-media {
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          &.feed-item-content {
+            padding: 1rem;
+            p {
+              &.feed-item-metadata {
+                font-weight: bold;
+                display: flex;
+                margin: 0 0 1rem 0;
+                span {
+                  flex: 1 1;
+                  &.feed-item-author {
+                    text-align: left;
+                  }
+                  &.feed-item-date {
+                    text-align: right;
+                    font-style: italic;
+                  }
+                }
+              }
+            }
+            div {
+              &.feed-item-body {
+                overflow: hidden;
+                img {
+                  max-width: 80%;
+                  height: auto;
+                }
+              }
+            }
+          }
+          &.feed-item-actions {
+            padding: 0.5rem 1rem;
+            text-align: right;
+          }
+        }
+        @include attus-layout-wide {
+          div {
+            &.feed-item-media {
+              float: left;
+              width: 560px;
+            }
+            &.feed-item-header, &.feed-item-content {
+              float: right;
+              width: 752px;
+            }
+            &.feed-item-actions {
+              clear: both;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -386,11 +386,19 @@
 html body div#page-container header#page-header section#app-bar div.region {
   padding-bottom: 1rem;
   padding-top: 1rem; }
+  html body div#page-container header#page-header section#app-bar div.region.region-app-bar {
+    display: flex; }
+    html body div#page-container header#page-header section#app-bar div.region.region-app-bar div.block {
+      flex: 1 1 auto; }
+      html body div#page-container header#page-header section#app-bar div.region.region-app-bar div.block.block-feed-notification {
+        width: 64px;
+        max-width: 64px;
+        min-width: 64px; }
 html body div#page-container header#page-header section#menu-bar div.block-search .form-item input {
   padding-top: 0.5rem; }
 @media (max-width: 599px) {
   html body div#page-container main#page-content {
-    padding-top: 3.5rem; } }
+    padding-top: 5.5rem; } }
 @media (min-width: 600px) and (max-width: 839px) {
   html body div#page-container main#page-content {
     padding-top: 7rem; } }
@@ -607,6 +615,20 @@ html body div#page-container .attus-card .attus-card-actions {
 @media (min-width: 720px) {
   html body div#page-container .attus-card {
     margin-bottom: 1.5rem; } }
+
+html body div.attus-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  @media (max-width: 719px) {
+    html body div.attus-container {
+      margin-left: 1rem;
+      margin-right: 1rem; } }
+  @media (min-width: 720px) {
+    html body div.attus-container {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem; } }
+  html body div.attus-container.attus-container-narrow {
+    max-width: 48rem; }
 
 body div#page-container nav.tabs ul.tabs.primary li {
   opacity: .72; }
@@ -1774,5 +1796,115 @@ input.button {
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
+
+.attus-button {
+  border: none;
+  border-radius: 0.25rem;
+  min-width: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  position: relative; }
+  .attus-button.attus-icon-button {
+    min-width: 2rem; }
+  .attus-button span.attus-button-badge {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+table.attus-list {
+  font-size: 1rem;
+  line-height: 1.5rem; }
+  table.attus-list tbody tr {
+    padding: 0.5rem 0; }
+    table.attus-list tbody tr td {
+      padding: 0.75rem 1.5rem; }
+
+@media (max-width: 719px) {
+  div.feed-list-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem; } }
+@media (min-width: 720px) {
+  div.feed-list-wrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem; } }
+@media (max-width: 719px) {
+  div.feed-list-wrapper div.feed-item {
+    margin-top: 1rem; } }
+@media (min-width: 720px) {
+  div.feed-list-wrapper div.feed-item {
+    margin-top: 1.5rem; } }
+@media (min-width: 1440px) {
+  div.feed-list-wrapper div.feed-item {
+    width: 1360px;
+    margin-left: auto;
+    margin-right: auto; } }
+div.feed-list-wrapper div.feed-item.feed-is-marking {
+  background-color: #a7ffeb; }
+div.feed-list-wrapper div.feed-item div.feed-item-header {
+  padding: 0.5rem 1rem; }
+  div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 56px;
+    margin-right: 16px; }
+    div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar img {
+      width: 56px;
+      height: 56px;
+      border-radius: 28px; }
+    @media (max-width: 599px) {
+      div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar {
+        width: 40px;
+        margin-right: 8px; }
+        div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar img {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px; } }
+  div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-title {
+    margin: 0;
+    padding: 0; }
+  div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-feed {
+    margin: 0;
+    padding: 0;
+    opacity: 0.72; }
+div.feed-list-wrapper div.feed-item div.feed-item-media img {
+  width: 100%;
+  height: auto; }
+div.feed-list-wrapper div.feed-item div.feed-item-content {
+  padding: 1rem; }
+  div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata {
+    font-weight: bold;
+    display: flex;
+    margin: 0 0 1rem 0; }
+    div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span {
+      flex: 1 1; }
+      div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span.feed-item-author {
+        text-align: left; }
+      div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span.feed-item-date {
+        text-align: right;
+        font-style: italic; }
+  div.feed-list-wrapper div.feed-item div.feed-item-content div.feed-item-body {
+    overflow: hidden; }
+    div.feed-list-wrapper div.feed-item div.feed-item-content div.feed-item-body img {
+      max-width: 80%;
+      height: auto; }
+div.feed-list-wrapper div.feed-item div.feed-item-actions {
+  padding: 0.5rem 1rem;
+  text-align: right; }
+@media (min-width: 1440px) {
+  div.feed-list-wrapper div.feed-item div.feed-item-media {
+    float: left;
+    width: 560px; }
+  div.feed-list-wrapper div.feed-item div.feed-item-header, div.feed-list-wrapper div.feed-item div.feed-item-content {
+    float: right;
+    width: 752px; }
+  div.feed-list-wrapper div.feed-item div.feed-item-actions {
+    clear: both; } }
 
 /*# sourceMappingURL=attus.css.map */

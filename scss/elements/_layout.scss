@@ -412,6 +412,19 @@ html {
                   &.region {
                     padding-bottom: 1rem;
                     padding-top: 1rem;
+                    &.region-app-bar {
+                      display: flex;
+                      div {
+                        &.block {
+                          flex: 1 1 auto;
+                          &.block-feed-notification {
+                            width: 64px;
+                            max-width: 64px;
+                            min-width: 64px;
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -432,7 +445,7 @@ html {
         main {
           &#page-content {
             @include attus-layout-mobile {
-              padding-top: 3.5rem;
+              padding-top: 5.5rem;
             }
             @include attus-layout-tablet {
               padding-top: 7rem;
@@ -625,6 +638,28 @@ html {
           @include attus-layout-header-gutter(24) {
             margin-bottom: 1.5rem;
           }
+        }
+      }
+    }
+  }
+}
+
+html {
+  body {
+    div {
+      &.attus-container {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        @include attus-layout-header-gutter(16) {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
+        @include attus-layout-header-gutter(24) {
+          margin-left: 1.5rem;
+          margin-right: 1.5rem;
+        }
+        &.attus-container-narrow {
+          max-width: 48rem;
         }
       }
     }

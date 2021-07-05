@@ -53,3 +53,26 @@ input {
     padding-bottom: 0.5rem;
   }
 }
+
+.attus-button {
+  border: none;
+  border-radius: 0.25rem;
+  min-width: 4rem;
+  &.attus-icon-button {
+    min-width: 2rem;
+  }
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  span {
+    &.attus-button-badge {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
