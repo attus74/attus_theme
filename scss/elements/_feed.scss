@@ -29,20 +29,23 @@ div {
         div {
           &.feed-item-header {
             padding: 0.5rem 1rem;
+            display: flex;
             p {
               &.feed-item-avatar {
-                float: left;
                 margin-top: 0;
                 margin-bottom: 0;
-                width: 56px;
-                  margin-right: 16px;
-                  img {
-                    width: 56px;
-                    height: 56px;
-                    border-radius: 28px;
-                  }
+                flex: 1 1;
+                min-width: 56px;
+                max-width: 56px;
+                margin-right: 16px;
+                img {
+                  width: 56px;
+                  height: 56px;
+                  border-radius: 28px;
+                }
                 @include attus-layout-mobile {
-                  width: 40px;
+                  min-width: 40px;
+                  max-width: 40px;
                   margin-right: 8px;
                   img {
                     width: 40px;
@@ -60,6 +63,22 @@ div {
                 padding: 0;
                 opacity: 0.72;
               }
+              &.feed-item-favorite {
+                cursor: pointer;
+                flex: 1 1;
+                min-width: 48px;
+                max-width: 48px;
+                margin: 12px 0;
+                @include attus-layout-mobile {
+                  margin-top: 8px;
+                  margin-bottom: 8px;
+                }
+              }
+            }
+            div {
+              &.feed-item-label {
+                flex: 2 2;
+              }
             }
           }
           &.feed-item-media {
@@ -71,6 +90,9 @@ div {
           &.feed-item-content {
             padding: 1rem;
             p {
+              line-height: 1.25rem;
+              margin: 0.25rem;
+              padding: 0;
               &.feed-item-metadata {
                 font-weight: bold;
                 display: flex;
@@ -93,6 +115,15 @@ div {
                 img {
                   max-width: 80%;
                   height: auto;
+                }
+                div {
+                  &.quote {
+                    padding: 8px;
+                    margin: 8px 0 8px 16px;
+                    border-left: 1px solid #a1887f;
+                    background-color: #efebe9;
+                    font-style: italic;
+                  }
                 }
               }
             }

@@ -1847,12 +1847,14 @@ table.attus-list {
 div.feed-list-wrapper div.feed-item.feed-is-marking {
   background-color: #a7ffeb; }
 div.feed-list-wrapper div.feed-item div.feed-item-header {
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  display: flex; }
   div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar {
-    float: left;
     margin-top: 0;
     margin-bottom: 0;
-    width: 56px;
+    flex: 1 1;
+    min-width: 56px;
+    max-width: 56px;
     margin-right: 16px; }
     div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar img {
       width: 56px;
@@ -1860,7 +1862,8 @@ div.feed-list-wrapper div.feed-item div.feed-item-header {
       border-radius: 28px; }
     @media (max-width: 599px) {
       div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar {
-        width: 40px;
+        min-width: 40px;
+        max-width: 40px;
         margin-right: 8px; }
         div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-avatar img {
           width: 40px;
@@ -1873,27 +1876,49 @@ div.feed-list-wrapper div.feed-item div.feed-item-header {
     margin: 0;
     padding: 0;
     opacity: 0.72; }
+  div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-favorite {
+    cursor: pointer;
+    flex: 1 1;
+    min-width: 48px;
+    max-width: 48px;
+    margin: 12px 0; }
+    @media (max-width: 599px) {
+      div.feed-list-wrapper div.feed-item div.feed-item-header p.feed-item-favorite {
+        margin-top: 8px;
+        margin-bottom: 8px; } }
+  div.feed-list-wrapper div.feed-item div.feed-item-header div.feed-item-label {
+    flex: 2 2; }
 div.feed-list-wrapper div.feed-item div.feed-item-media img {
   width: 100%;
   height: auto; }
 div.feed-list-wrapper div.feed-item div.feed-item-content {
   padding: 1rem; }
-  div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata {
-    font-weight: bold;
-    display: flex;
-    margin: 0 0 1rem 0; }
-    div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span {
-      flex: 1 1; }
-      div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span.feed-item-author {
-        text-align: left; }
-      div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span.feed-item-date {
-        text-align: right;
-        font-style: italic; }
+  div.feed-list-wrapper div.feed-item div.feed-item-content p {
+    line-height: 1.25rem;
+    margin: 0.25rem;
+    padding: 0; }
+    div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata {
+      font-weight: bold;
+      display: flex;
+      margin: 0 0 1rem 0; }
+      div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span {
+        flex: 1 1; }
+        div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span.feed-item-author {
+          text-align: left; }
+        div.feed-list-wrapper div.feed-item div.feed-item-content p.feed-item-metadata span.feed-item-date {
+          text-align: right;
+          font-style: italic; }
   div.feed-list-wrapper div.feed-item div.feed-item-content div.feed-item-body {
     overflow: hidden; }
     div.feed-list-wrapper div.feed-item div.feed-item-content div.feed-item-body img {
       max-width: 80%;
       height: auto; }
+    div.feed-list-wrapper div.feed-item div.feed-item-content div.feed-item-body div.quote {
+      padding: 8px;
+      margin: 8px 0 8px 16px;
+      border-left: 1px solid #a1887f;
+      background-color: #efebe9;
+      font-style: italic; }
 div.feed-list-wrapper div.feed-item div.feed-item-actions {
   padding: 0.5rem 1rem;
   text-align: right; }
