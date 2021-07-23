@@ -1,0 +1,84 @@
+div {
+  &#handball-games {
+    @include attus-layout-header-gutter(16) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+    }
+    @include attus-layout-header-gutter(24) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    div {
+      &.handball-day-wrapper {
+        margin-bottom: 16px;
+        h2 {
+          margin: 0;
+          padding: 8px 0;
+        }
+        div {
+          &.handball-location {
+            h4 {
+              display: flex;
+              span {
+                &.name {
+                  flex: 2 2;
+                }
+                &.buttoons {
+                  flex: 1 1;
+                }
+              }
+            }
+            &.handball-mobile-location {
+              padding: 16px;
+              h4 {
+                padding: 0;
+                margin: 0;
+              }
+              div {
+                &.handball-game {
+                  padding: 8px 0;
+                  display: flex;
+                  div {
+                    &.hour {
+                      flex: 1 1;
+                      font-weight: 800;
+                      min-width: 42px;
+                      max-width: 42px;
+                    }
+                    &.game-data {
+                      flex: 2 2;
+                      h5 {
+                        margin: 0;
+                        padding: 0;
+                        font-weight: 400;
+                        span {
+                          &.league-name {
+                            padding-left: 8px;
+                            font-size: 80%;
+                            opacity: .54;
+                            font-style: italic;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  &.game-inactive {
+                    color: #e57373;
+                    div {
+                      &.warnings {
+                        color: #b71c1c;
+                        font-style: italic;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

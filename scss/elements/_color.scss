@@ -97,6 +97,9 @@ $attus-green: (
               }
             }
           }
+          h4 {
+            color: map-get($secondary, 'foreground');
+          }
         }
       }
       a {
