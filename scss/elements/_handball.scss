@@ -26,6 +26,7 @@ div {
         display: flex;
         margin: 0;
         padding: 8px;
+        overflow: hidden;
         span {
           display: block;
           &.name {
@@ -157,6 +158,9 @@ div {
           &.handball-game-buttons {
             flex: 1 1;
             text-align: right;
+            a {
+              padding-left: 24px;
+            }
           }
         }
       }

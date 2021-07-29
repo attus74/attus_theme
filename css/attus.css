@@ -1985,7 +1985,8 @@ div.handball-day-wrapper h4.location-name {
   height: 24px;
   display: flex;
   margin: 0;
-  padding: 8px; }
+  padding: 8px;
+  overflow: hidden; }
   div.handball-day-wrapper h4.location-name span {
     display: block; }
     div.handball-day-wrapper h4.location-name span.name {
@@ -2066,6 +2067,8 @@ div.handball-game div.handball-game-actions {
   div.handball-game div.handball-game-actions div.handball-game-buttons {
     flex: 1 1;
     text-align: right; }
+    div.handball-game div.handball-game-actions div.handball-game-buttons a {
+      padding-left: 24px; }
 div.handball-game div.handball-game-warnings {
   color: #d50000; }
   div.handball-game div.handball-game-warnings p {
