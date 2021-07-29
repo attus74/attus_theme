@@ -101,6 +101,9 @@ $attus-green: (
             color: map-get($secondary, 'foreground');
           }
         }
+        .error {
+          color: map-get($error, 'foreground');
+        }
       }
       a {
         &:link, &:visited {
