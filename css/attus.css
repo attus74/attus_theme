@@ -2055,6 +2055,10 @@ div.handball-game h5.game-teams {
     opacity: 0.82;
     font-style: italic;
     padding-left: 0.5rem; }
+div.handball-game p.referees {
+  font-size: 85%;
+  margin: 0;
+  padding: 0.5rem 0; }
 div.handball-game div.handball-game-actions {
   padding: 8px 0;
   display: flex; }

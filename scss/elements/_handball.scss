@@ -139,6 +139,13 @@ div {
         }
       }
     }
+    p {
+      &.referees {
+        font-size: 85%;
+        margin: 0;
+        padding: 0.5rem 0; 
+      }
+    }
     div {
       &.handball-game-actions {
         padding: 8px 0;
